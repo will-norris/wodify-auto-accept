@@ -39,9 +39,12 @@ def book_class(booking_url):
 
 
 def is_new_email(email_id):
-    with open('email.txt', 'r') as f:
-        last_email_id = f.read()
-    return email_id != last_email_id
+    email_id_file = 'email.txt'
+    if os.path.isfile(email_id_file):
+        with open('email.txt', 'r') as f:
+            last_email_id = f.read()
+        return email_id != last_email_id
+    return False
 
 
 def get_email_html(gmail_email_data):

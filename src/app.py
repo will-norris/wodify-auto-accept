@@ -20,7 +20,7 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 def parse_html_for_booking_link(email_html):
     soup = BeautifulSoup(email_html, 'html.parser')
-    anchor_tag = soup.findAll('a', href=True, text='Accept')[0]
+    anchor_tag = soup.findAll('a', href=True, string='Accept')[0]
     return anchor_tag['href']
 
 

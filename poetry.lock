@@ -138,6 +138,29 @@ files = [
 ]
 
 [[package]]
+name = "google-api-auth"
+version = "0.0.1"
+description = "A small example package"
+optional = false
+python-versions = ">=3.7"
+files = []
+develop = false
+
+[package.dependencies]
+google-api-core = ">=2.11,<3.0"
+google-api-python-client = ">=2.86,<3.0"
+google-auth = ">=2.17.3,<2.18.0"
+google-auth-httplib2 = ">=0.1,<1.0"
+google-auth-oauthlib = ">=1.0,<2.0"
+googleapis-common-protos = ">=1.60,<2.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/will-norris/google-api-auth"
+reference = "master"
+resolved_reference = "3f6a30d0b61d3b0e7a4d06fab98aad57740d6cc8"
+
+[[package]]
 name = "google-api-core"
 version = "2.11.0"
 description = "Google API client core library"
@@ -233,29 +256,6 @@ requests-oauthlib = ">=0.7.0"
 
 [package.extras]
 tool = ["click (>=6.0.0)"]
-
-[[package]]
-name = "google-token-auth"
-version = "0.0.1"
-description = "A small example package"
-optional = false
-python-versions = ">=3.7"
-files = []
-develop = false
-
-[package.dependencies]
-google-api-core = ">=2.11,<3.0"
-google-api-python-client = ">=2.86,<3.0"
-google-auth = ">=2.17.3,<2.18.0"
-google-auth-httplib2 = ">=0.1,<1.0"
-google-auth-oauthlib = ">=1.0,<2.0"
-googleapis-common-protos = ">=1.60,<2.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/will-norris/google_api_auth"
-reference = "master"
-resolved_reference = "c6f7fd4f78183c77abefe24b05641779d43d2759"
 
 [[package]]
 name = "googleapis-common-protos"
@@ -482,4 +482,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "022c2e952e6c96eb5be06c2a7b48776dc4e800f05becdc97efec1ecb1893310c"
+content-hash = "217cd2578d8c5b9a8f91c6335549b7640f0e8fa6518411815ae69862347e30f9"

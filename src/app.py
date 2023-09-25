@@ -6,8 +6,8 @@ import requests
 from googleapiclient.discovery import build
 
 # Custom packages
-from google_token_auth import gmail
-from google_token_auth.setup_logging import setup_logger
+from google_api_auth import gmail
+from google_api_auth.setup_logging import setup_logger
 
 LOGGER = setup_logger('wodify')
 WODIFY_LABEL = 'Label_31974612365702973'

@@ -76,7 +76,7 @@ def main():
                     book_class(booking_url)
 
             else:
-                LOGGER.info('Email is the same as last time - nothing to do')
+                LOGGER.debug('Email is the same as last time - nothing to do')
 
             with open('email.txt', 'w') as f:
                 f.write(most_recent_email_id)
